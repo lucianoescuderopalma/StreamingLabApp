@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:text="Bienvenido a StreamingLab"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btnPlans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plans"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/purple_700"
+        android:textColor="@color/white"/>
+
+    <!-- NUEVO: Botón de noticias -->
+    <Button
+        android:id="@+id/btnVerNoticias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Noticias"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

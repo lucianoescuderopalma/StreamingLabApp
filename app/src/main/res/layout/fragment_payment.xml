@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#6a11cb"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvPaymentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proceso de Pago"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Nombre y precio del plan -->
+        <TextView
+            android:id="@+id/tvPlanNamePayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan seleccionado: Básico"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvPlanPricePayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precio: $5.990/mes"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Método de pago -->
+        <Spinner
+            android:id="@+id/spinnerPaymentMethod"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_rounded"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Número de tarjeta -->
+        <EditText
+            android:id="@+id/etCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Número de tarjeta"
+            android:inputType="number"
+            android:padding="12dp"
+            android:background="@drawable/edittext_rounded"
+            android:textColor="@android:color/black"
+            android:textColorHint="#88000000"
+            android:layout_marginBottom="16dp" />
+
+        <!-- CVV -->
+        <EditText
+            android:id="@+id/etCardCVV"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="CVV"
+            android:inputType="numberPassword"
+            android:padding="12dp"
+            android:background="@drawable/edittext_rounded"
+            android:textColor="@android:color/black"
+            android:textColorHint="#88000000"
+            android:layout_marginBottom="24dp" />
+
+        <!-- ProgressBar agregado -->
+        <ProgressBar
+            android:id="@+id/progressBarPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Botón de pago -->
+        <Button
+            android:id="@+id/btnPay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Confirmar Pago"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_rounded"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Botón volver -->
+        <Button
+            android:id="@+id/btnBackPayment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Volver"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_rounded_secondary"
+            android:layout_marginBottom="32dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "nombre": "Individual",
+    "descripcion": "Gestión de 1 cuenta, seguimiento de facturación y multimedia",
+    "precio": "$4.990",
+    "imageResName": "plan_basico",
+    "resolucion": "SD",
+    "dispositivos": 1,
+    "perfiles": 1,
+    "descargasOffline": false
+  },
+  {
+    "id": 2,
+    "nombre": "Familiar",
+    "descripcion": "Gestión de varias cuentas, fechas de facturación y multimedia compartido",
+    "precio": "$9.990",
+    "imageResName": "plan_familiar",
+    "resolucion": "HD",
+    "dispositivos": 3,
+    "perfiles": 3,
+    "descargasOffline": true
+  },
+  {
+    "id": 3,
+    "nombre": "Corporativo",
+    "descripcion": "Gestión avanzada de cuentas múltiples, reportes y multimedia",
+    "precio": "$14.990",
+    "imageResName": "plan_corporativo",
+    "resolucion": "4K",
+    "dispositivos": 4,
+    "perfiles": 4,
+    "descargasOffline": true
+  }
+]

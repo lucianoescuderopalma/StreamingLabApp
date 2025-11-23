@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:paddingTop="32dp"
+    android:paddingBottom="20dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título general -->
+        <TextView
+            android:id="@+id/tvPlanDetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detalles de Compra"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Bloque del plan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:elevation="6dp"
+            android:layout_marginBottom="20dp">
+
+            <!-- Imagen del plan -->
+            <ImageView
+                android:id="@+id/imgPlanDetail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerInside"
+                android:contentDescription="Imagen del plan"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_launcher_foreground" />
+
+            <!-- Nombre del plan -->
+            <TextView
+                android:id="@+id/tvDetailName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre del Plan"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Precio -->
+            <TextView
+                android:id="@+id/tvDetailPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$0.00"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Descripción -->
+            <TextView
+                android:id="@+id/tvDetailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripción del plan"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Características individuales -->
+            <TextView
+                android:id="@+id/tvDetailResolution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resolución:"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/tvDetailDevices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dispositivos permitidos:"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/tvDetailProfiles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Perfiles incluidos:"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/tvDetailOffline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descargas offline:"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Mensaje de confianza -->
+            <TextView
+                android:id="@+id/tvTrust"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="En StreamingLab protegemos tus datos con encriptación avanzada y protocolos de seguridad internacionales. Tu información de pago está 100% segura y solo será usada para procesar tu suscripción."
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp" />
+
+        </LinearLayout>
+
+        <!-- Botón continuar -->
+        <Button
+            android:id="@+id/btnContinueToPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continuar al Pago"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Botón atrás -->
+        <Button
+            android:id="@+id/btnPlanDetailBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>
