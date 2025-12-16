@@ -66,6 +66,8 @@ dependencies {
 
     // Room
     implementation("androidx.room:room-runtime:2.6.1")
+    implementation(libs.androidx.espresso.core)
+    implementation(libs.androidx.junit)
     kapt("androidx.room:room-compiler:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
     testImplementation("androidx.room:room-testing:2.6.1")
@@ -79,6 +81,9 @@ dependencies {
     kapt("com.github.bumptech.glide:compiler:4.16.0")
 
     // Testing
+    debugImplementation("androidx.fragment:fragment-testing:1.6.2")
+    debugImplementation("androidx.fragment:fragment-testing:1.6.2")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -86,4 +91,6 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+    testImplementation("androidx.arch.core:core-testing:2.2.0")
+
 }

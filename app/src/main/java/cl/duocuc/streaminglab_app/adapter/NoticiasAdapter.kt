@@ -52,14 +52,24 @@ class NoticiasAdapter(private var noticias: List<Noticia>) :
      */
     override fun onBindViewHolder(holder: NoticiaViewHolder, position: Int) {
         val noticia = noticias[position]
+
         holder.tvTitulo.text = noticia.title
-        holder.tvDescripcion.text = noticia.description ?: ""
+
+        val descripcion = noticia.description ?: ""
+        holder.tvDescripcion.text =
+            if (descripcion.length > 500) {
+                descripcion.substring(0, 500) + "..."
+            } else {
+                descripcion
+            }
+
         Glide.with(holder.imgNoticia.context)
             .load(noticia.urlToImage)
-            .placeholder(R.drawable.ic_launcher_foreground)
-            .error(R.drawable.ic_launcher_foreground)
+            .placeholder(R.drawable.carga)
+            .error(R.drawable.fondo)
             .into(holder.imgNoticia)
     }
+
 
     /**
      * Devuelve la cantidad de noticias en la lista.
